@@ -6,18 +6,26 @@ import {
 } from "react-router-dom";
 import User from "./pages/User";
 import ErrorPage from "./error/ErrorPage";
+import App from "./App";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <App />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/users",
+        element: <User />,
+      },
+    ],
   },
   {
-    path: "/users",
-    element: <User />,
-    errorElement: <ErrorPage />,
+    path: "/books",
+    // element: <User />,
+    // errorElement: <ErrorPage />,
   }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
