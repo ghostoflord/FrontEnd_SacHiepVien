@@ -5,14 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import User from "./pages/User";
-import ErrorPage from "./error/ErrorPage";
 import App from "./App";
+import DontPage from "./error/404Page";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
+    // errorElement: <ErrorPage />,
+    errorElement: <DontPage />,
     children: [
       {
         path: "/users",

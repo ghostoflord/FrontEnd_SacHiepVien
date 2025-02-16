@@ -8,7 +8,7 @@ const FooterPage = () => {
                     textAlign: 'center',
                 }}
             >
-                Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                SacHiepVien ©{new Date().getFullYear()} Created by Ghost
             </Footer>
         </>
     )
