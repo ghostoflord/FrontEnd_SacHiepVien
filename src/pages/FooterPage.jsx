@@ -1,6 +1,7 @@
 import { Footer } from "antd/es/layout/layout";
 
 const FooterPage = () => {
+
     return (
         <>
             <Footer
