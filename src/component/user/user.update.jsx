@@ -1,4 +1,4 @@
-import { Modal, Input, notification, Select, Form, InputNumber } from 'antd';
+import { Modal, Input, notification, Select, Form } from 'antd';
 const { Option } = Select;
 
 const CreateUserModal = (props) => {

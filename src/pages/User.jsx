@@ -5,8 +5,9 @@ import CreateUserModal from "../component/user/user.update";
 const User = () => {
     const [listUsers, setListUsers] = useState([]);
     const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
-    const access_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJwZXJtaXNzaW9uIjpbIlJPTEVfVVNFUl9DUkVBVEUiLCJST0xFX1VTRVJfVVBEQVRFIl0sImV4cCI6MTgyNjM0NzE2OSwiaWF0IjoxNzM5OTQ3MTY5LCJ1c2VyIjp7ImlkIjoxLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOm51bGx9fQ.9XM8xgGmTD94wl4Q0RfWRvWDA1ns0UX3ehPCX43XvocsUJxyzVIal9tJQv6lyjvwtmeQv7XZzemXIlGqGxUJFA";
+    const access_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJwZXJtaXNzaW9uIjpbIlJPTEVfVVNFUl9DUkVBVEUiLCJST0xFX1VTRVJfVVBEQVRFIl0sImV4cCI6MTgyNjQxOTU2MywiaWF0IjoxNzQwMDE5NTYzLCJ1c2VyIjp7ImlkIjoxLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOm51bGx9fQ.kg5SoKi27de7-sS_AmtyI3S5cqPhcWslICJw9_eoCDW3-dsugPzuD2MkN4qKKsIega6RmyG9Vnn6o3kFnYT-Ww";
 
+    // const access_token = localStorage.getItem("access_token");
     useEffect(() => {
         //update
         getData()
@@ -28,7 +29,7 @@ const User = () => {
             })
         }
         setListUsers(d.data.result)
-        console.log("check res", d)
+        console.log("check res", d.data)
     }
 
     const columns = [
