@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, notification, Popconfirm, Table } from "antd";
 import { DeleteOutlined, EditOutlined, PlusOutlined } from '@ant-design/icons';
-import CreateUserModal from "../component/user/user.update";
+import CreateUserModal from "../component/admin/user/user.update";
 const User = () => {
     const [listUsers, setListUsers] = useState([]);
     const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);

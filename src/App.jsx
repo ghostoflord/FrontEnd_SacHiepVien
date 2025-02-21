@@ -8,6 +8,7 @@ import User from "./pages/User";
 import BookPage from "./pages/client/book/book";
 import LoginPage from "./pages/client/login/login";
 import DontPage from "./error/404Page";
+import LayoutAdmin from "./component/admin/LayoutAdmin";
 
 
 const Layout = () => {
@@ -35,6 +36,21 @@ export default function App() {
         },
         {
           path: "books",
+          element: <BookPage />,
+        },
+      ],
+    },
+    {
+      path: "/admin",
+      element: <LayoutAdmin />,
+      errorElement: <DontPage />,
+      children: [
+        {
+          path: "user",
+          element: <User />,
+        },
+        {
+          path: "book",
           element: <BookPage />,
         },
       ],
