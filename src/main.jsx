@@ -7,6 +7,7 @@ import {
 import User from "./pages/User";
 import App from "./App";
 import DontPage from "./error/404Page";
+import LoginPage from "./pages/client/login/login";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         element: <User />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
   },
   {
     path: "/books",

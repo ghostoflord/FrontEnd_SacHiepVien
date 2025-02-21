@@ -86,8 +86,8 @@ const User = () => {
             {/* <UserForm loadUser={loadUser} /> */}
             <Table
                 columns={columns}
-                dataSource={listUsers} // Sử dụng dataSource để truyền danh sách dữ liệu
-                rowKey="id" // chỉ định một khóa duy nhất cho từng hàng  
+                dataSource={listUsers}
+                rowKey="id"
             />
 
             <CreateUserModal
