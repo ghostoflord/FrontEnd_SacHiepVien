@@ -8,7 +8,6 @@ import {
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme } from 'antd';
 import { NavLink } from 'react-router-dom';
-import User from './User';
 const { Header, Sider, Content } = Layout;
 const HeaderPage = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -75,7 +74,7 @@ const HeaderPage = () => {
                         borderRadius: borderRadiusLG,
                     }}
                 >
-                    <User />
+
                 </Content>
             </Layout>
         </Layout>

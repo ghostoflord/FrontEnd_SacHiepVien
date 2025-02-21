@@ -16,7 +16,13 @@ const LoginPage = () => {
         const { username, password } = values;
         setIsSubmit(true);
         const res = await fetch(
-            "http://localhost:8080/auth/login",
+            "http://localhost:8080/auth/login", {
+            headers: {
+                'Authorization': `Bearer ${access_token}`,
+                "Content-Type": "application/json",
+            }
+
+        },
         )
         setIsSubmit(false);
         if (res?.data) {
